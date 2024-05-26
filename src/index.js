@@ -6,7 +6,7 @@ const ApiRoutes = require('./routes/index');
 
 const db=require('./models/index');
 const sequelize=require('sequelize');
-const {City,Airport}=require('./models/index');
+//const {Airplane}=require('./models/index');
 const { FORCE } = require("sequelize/lib/index-hints");
 
 
@@ -26,6 +26,7 @@ const setupAndStartServer= async()=>{
         {
             db.sequelize.sync({alter:true});
         }       
+        
     });
 }
 
